@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+
+<h1>¿Alcohol o gasolina?</h1>
+<h2>Características del coche:</h2>
+<h5>Tanque de 40 L.</h5>
+<h5>Distancia recorrida total con gasolina: 480 kilómetros.</h5>
+<h5>Distancia recorrida total con alcohol: 300 kilómetros.</h5>
+<h2>Resultados:</h2>
+
+<script>
+
+    //Usando Gasolina.
+    var tanque=40;
+    var distanceDriven=480;
+    var efficiencyCar= (distanceDriven/tanque);
+    document.write('<h5>La eficiencia del coche al usar gasolina es: ' + efficiencyCar + ' kilómetros por litro de gasolina.</h5>');
+
+    //Usando alcohol:
+    var distanceDrivenAlcohol = 300;
+    var efficiencyCarAlcohol = (distanceDrivenAlcohol/tanque);
+    document.write('<h5>La eficiencia del coche al usar alcohol es: ' + efficiencyCarAlcohol + ' kilómetros por litro de alcohol. </h5>');
+
+</script>

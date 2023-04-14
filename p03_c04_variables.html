@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+
+Xel nació en el año...
+<br>
+2000
+<br>
+<br>
+Pepe nació en el año...
+<br>
+2014
+<br>
+<br>
+Milton nació en el año...
+<br>
+2022
+<br>
+<br>
+Yara nació en el año...
+<br>
+1975
+<br>
+<br>
+Karina nació en el año...
+<br>
+1978
+<br>
+<br>
+Josefina nació en el año...
+<br>
+1942
+<br>
+<br>
+Leopoldo nació en el año...
+<br>
+1972
+<br>
+<br>
+Eleazar nació en el año...
+<br>
+1971
+<br>
+<br>
+<h1>Por lo tanto, sus edades son:</h1>
+
+<script>
+
+    //Aqui crearemos una lista de variables en las cuales vaciaremos nuestros datos de años de nacimiento y sus edades.
+        var año = 2023;
+        var Xel = 2000;
+        var Pepe = 2014;
+        var Milton = 2022;
+        var Yara = 1975;
+        var Karina = 1978;
+        var Josefina = 1942;
+        var Leopoldo = 1972;
+        var Eleazar = 1971;
+        var bXel = (año) - (Xel);
+        var bPepe = año-Pepe;
+        var bMilton = año-Milton;
+        var bYara = año-Yara;
+        var bKarina = año-Karina;
+        var bJosefina = año-Josefina;
+        var bLeopoldo = año-Leopoldo;
+        var bEleazar = año-Eleazar;
+    
+        //En HTML escribiremos las edades, pero llamando a la variable bNOMBRE, que contiene la operación matemática dentro.
+        document.write('Xel tiene... ' + (bXel) + ' años <br> <br>');
+        document.write('Pepe tiene... ' + (bPepe) + ' años <br> <br>');
+        document.write('Milton tiene... ' + (bMilton) + ' años <br> <br>');
+        document.write('Yara tiene... ' + (bYara) + ' años <br> <br>');
+        document.write('Karina tiene... ' + (bKarina) + ' años <br> <br>');
+        document.write('Josefina tiene... ' + (bJosefina) + ' años <br> <br>');
+        document.write('Leopoldo tiene... ' + (bLeopoldo) + ' años <br> <br>');
+        document.write('Eleazar tiene... ' + (bEleazar) + ' años <br> <br>');
+    
+        //La variable 'promedio' contendrá el promedio de las edades de los participantes.
+        var promedio = ((bXel+bPepe+bMilton+bYara+bKarina+bJosefina+bLeopoldo+bEleazar)/8);
+
+        //En HTML, imprimiremos llamando a la función promedio.
+        document.write('<h3>El promedio de las edades sin redondeo es: ' + promedio + '</h3>');
+
+        //Podemos ocupar Math.round() para redondear los resultados dentro de una variable.
+        document.write('<h3>El promedio de las edades con redondeo es: ' + Math.round(promedio)+'</h3>');
+
+        //Podemos también declarar una variable con un string, o un texto. 
+        var nom1 = 'Pepe';
+        var nom2 = 'Milton';
+        var nom3 = 'Mamá';
+        var nom4= 'Tía Karina';
+        var nom5 = 'Abuela';
+        var nom6 = ' Tío Leopoldo';
+        var nom7 = 'Tío Eleazar';
+
+        //Luego podemos mandar a llamarlas en un texto.
+        document.write('<br>')
+        document.write (nom1 + ', ' + nom2 + ', ' + nom3 + ', ' + nom4 + ', ' + nom5 + ', ' + nom6 + ' y ' + nom7 + ' son mi familia.');
+
+</script>
